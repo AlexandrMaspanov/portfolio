@@ -1,6 +1,7 @@
 import React from "react";
 import { FaExternalLinkAlt, FaGithub } from 'react-icons/fa';
 import * as techIcons from 'react-icons/fa';
+import { SiTypescript } from "react-icons/si";
 import classes from './ProjectCard.module.css';
 
 const ProjectCard = ({ name, fullName, description, topics, link, homepage }) => {
@@ -38,7 +39,7 @@ function getIcon(topic) {
     const map = {
         react: <techIcons.FaReact color="#61DBFB" />,
         javascript: <techIcons.FaJs color="#F0DB4F" />,
-        typescript: <techIcons.FaTs color="#007acc" />,
+        typescript: <SiTypescript color="#007acc" />,
         html: <techIcons.FaHtml5 color="#e34c26" />,
         css: <techIcons.FaCss3Alt color="#264de4" />,
         nodejs: <techIcons.FaNodeJs color="#3C873A" />,
