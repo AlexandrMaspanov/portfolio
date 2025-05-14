@@ -28,3 +28,10 @@ section {
   gap: 1rem;
   margin-top: 1rem;
 }
+
+.notFound {
+  margin-top: 20px;
+  color: rgb(110, 110, 110);
+  font-size: 1.1rem;
+  font-weight: bold;
+}
