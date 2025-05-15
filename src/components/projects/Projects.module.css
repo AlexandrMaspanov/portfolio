@@ -1,0 +1,12 @@
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.notFound {
+    font-style: italic;
+    letter-spacing: 0.5px;
+    color: #999;
+}

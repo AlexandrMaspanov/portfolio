@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
-import ProjectCard from "./projectCard/ProjectCard";
-import Loader from "./UI/loader/Loader";
+import ProjectCard from "../projectCard/ProjectCard";
+import Loader from "../UI/loader/Loader";
+import classes from './Projects.module.css';
 
 const Projects = () => {
     const username = 'alexandrmaspanov';
@@ -22,14 +23,15 @@ const Projects = () => {
     }, []);
 
     return (
-        <section className="projects">
-            <h2>My Projects</h2>
-            <div className="projectsGrid">
-                {isLoading
+        <section>
+            <div className="header">
+                <h2>My Projects</h2>
+            </div>
+            {isLoading
                 ? <Loader />
-                : (
-                    repos.length
-                        ? repos.map(repo =>
+                : repos.length ? (
+                    <div className={classes.grid}>
+                        {repos.map(repo =>
                             <ProjectCard
                                 key={repo.id}
                                 name={repo.name}
@@ -39,11 +41,12 @@ const Projects = () => {
                                 link={repo.html_url}
                                 homepage={repo.homepage}
                             />
-                        )
-                        : <div className="notFound">Projects not found!</div>
-                    )
-                }
-            </div>
+                        )}
+                    </div>
+                ) : (
+                    <p className={`text ${classes.notFound}`}>Projects not found!</p>
+                )
+            }
         </section>
     );
 }

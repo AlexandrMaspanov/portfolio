@@ -1,7 +1,7 @@
 import React from 'react';
 import './styles.css';
-import About from './components/About';
-import Projects from './components/Projects';
+import About from './components/about/About';
+import Projects from './components/projects/Projects';
 
 function App() {
   return (
