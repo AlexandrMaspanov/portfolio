@@ -4,7 +4,7 @@ import classes from './About.module.css';
 
 const About = () => {
     return (
-        <section>
+        <section id="about">
             <div className="header">
                 <FaUser className={classes.icon} />
                 <h2>About Me</h2>
