@@ -1,6 +1,7 @@
 import React from "react";
-import { FaEnvelope, FaGithub, FaLinkedin, FaTelegram } from 'react-icons/fa';
+import { FaEnvelope, FaGithub, FaLinkedin, FaTelegramPlane } from 'react-icons/fa';
 import classes from './Contacts.module.css';
+import ContactItem from "./contactItem/ContactItem";
 
 const Contacts = () => {
     return (
@@ -8,26 +9,28 @@ const Contacts = () => {
             <div className="header">
                 <h2>Contact Me</h2>
             </div>
-            <div>
-                <ul>
-                    <li>
-                        <FaEnvelope />
-                        <a href="mailto:alexandrmaspanov@gmail.com">alexandrmaspanov@gmail.com</a>
-                    </li>
-                    <li>
-                        <FaGithub />
-                        <a href="https://github.com/alexandrmaspanov" target="_blank" rel="noopener noreferrer">GitHub</a>
-                    </li>
-                    <li>
-                        <FaLinkedin />
-                        <a href="https://www.linkedin.com/in/alexandr-maspanov-00378a227/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-                    </li>
-                    <li>
-                        <FaTelegram />
-                        <a href="https://t.me/maspanovsasha" target="_blank" rel="noopener noreferrer">Telegram</a>
-                    </li>
-                </ul>
-            </div>
+            <ul>
+                <ContactItem
+                    url="mailto:alexandrmaspanov@gmail.com"
+                    icon={FaEnvelope}
+                    label="alexandrmaspanov@gmail.com"
+                />
+                <ContactItem
+                    url="https://github.com/alexandrmaspanov"
+                    icon={FaGithub}
+                    label="GitHub"
+                />
+                <ContactItem
+                    url="https://www.linkedin.com/in/alexandr-maspanov-00378a227/"
+                    icon={FaLinkedin}
+                    label="LinkedIn"
+                />
+                <ContactItem
+                    url="https://t.me/maspanovsasha"
+                    icon={FaTelegramPlane}
+                    label="Telegram"
+                />
+            </ul>
         </section>
     );
 }
