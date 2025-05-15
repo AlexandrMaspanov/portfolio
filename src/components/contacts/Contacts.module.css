@@ -1,0 +1,19 @@
+.contacts ul {
+    list-style: none;
+    padding: 0;
+}
+
+.contacts li {
+    margin: 12px 0;
+    font-size: 1.1rem;
+}
+
+.contacts a {
+    margin-left: 0.5rem;
+    text-decoration: none;
+    color: #0077cc;
+}
+
+.contacts a:hover {
+    text-decoration: underline;
+}
