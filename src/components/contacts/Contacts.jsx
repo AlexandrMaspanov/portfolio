@@ -21,12 +21,12 @@ const Contacts = () => {
                     label="GitHub"
                 />
                 <ContactItem
-                    url="https://www.linkedin.com/in/alexandr-maspanov-00378a227/"
+                    url="https://linkedin.com/in/alexandr-maspanov/"
                     icon={FaLinkedin}
                     label="LinkedIn"
                 />
                 <ContactItem
-                    url="https://t.me/maspanovsasha"
+                    url="https://t.me/alexandrmaspanov"
                     icon={FaTelegramPlane}
                     label="Telegram"
                 />
